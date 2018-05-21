@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Car_Rent:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Car_Rent_jar</output-path>
+    <root id="archive" name="Car_Rent.jar">
+      <element id="module-output" name="Car_Rent" />
+    </root>
+  </artifact>
+</component>
