@@ -35,7 +35,7 @@ public class Admin extends Car {
                 type = "皮卡";
                 break;
             } else {
-                System.out.print("设置类型错误，请重新输入");
+                System.out.print("!!!!!设置类型错误，请重新输入!!!!!");
                 System.out.println("请重新设置车的类型（0:货车  1：轿车 2：皮卡）：");
                 n = input.nextInt();
             }

@@ -37,7 +37,7 @@ public class User extends Admin {
     }
 
     public void selectRent() {
-        System.out.println("请输入想要租车的数量");
+        System.out.println("请输入想要租车的数量：");
         int n = input.nextInt();
         for (int i = 0; i <n; i++) {
             System.out.println("请输入第" + (i+1) + "车的序号");
@@ -60,15 +60,15 @@ public class User extends Admin {
                 totalcost = totalcost + Integer.parseInt(temp[1]);
             }
         }
-        System.out.println("请输入您要租车的天数");
+        System.out.println("请输入您要租车的天数：");
         n = input.nextInt();
-        System.out.println("可以载货的车有：");
-
-        System.out.println(allLoadName + sumLoad);
-        System.out.println("可以载人的车有：");
-        System.out.println(allPeopleName + sumPeolpe);
-        System.out.println("总计租金");
-        System.out.println(totalcost * n);
+        System.out.println("----------------您的订单---------------");
+        System.out.println("-------------可以载货的车有：");
+        System.out.println(allLoadName + "   共载货"+sumLoad+"吨");
+        System.out.println("-------------可以载人的车有：");
+        System.out.println(allPeopleName +"   共载"+sumPeolpe+"人");
+        System.out.println("-------------总计租金-----------------");
+        System.out.println("-------"+totalcost * n+"元"+"--------");
     }
 
 }
