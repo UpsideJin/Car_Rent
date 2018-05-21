@@ -6,8 +6,8 @@ public class User extends Admin {
     private String str;
     private int sumLoad = 0;
     private int sumPeolpe = 0;
-    private String allLoadName;
-    private String allPeopleName;
+    private String allLoadName = "";
+    private String allPeopleName = "";
     private int totalcost = 0;
 
     public String formtStr() {
@@ -39,7 +39,7 @@ public class User extends Admin {
     public void selectRent() {
         System.out.println("请输入想要租车的数量");
         int n = input.nextInt();
-        for (int i = 0; i <n-1; i++) {
+        for (int i = 0; i <n; i++) {
             System.out.println("请输入第" + (i+1) + "车的序号");
             int m = input.nextInt();
             System.out.println(db.get(m-1).toString());
@@ -60,7 +60,7 @@ public class User extends Admin {
                 totalcost = totalcost + Integer.parseInt(temp[1]);
             }
         }
-        System.out.println("请输入 您要租车的天数");
+        System.out.println("请输入您要租车的天数");
         n = input.nextInt();
         System.out.println("可以载货的车有：");
 
